@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36D6782A-2AE3-4FE4-BF09-AAAD63FCF224}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ConsoleApp4</RootNamespace>
+    <AssemblyName>ConsoleApp4</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icono.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ahorcado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ahorcado.Designer.cs">
+      <DependentUpon>Ahorcado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrientacionPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrientacionPrincipal.Designer.cs">
+      <DependentUpon>OrientacionPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlimentacionPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlimentacionPrincipal.Designer.cs">
+      <DependentUpon>AlimentacionPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospedajePrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospedajePrincipal.Designer.cs">
+      <DependentUpon>HospedajePrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransportePrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransportePrincipal.Designer.cs">
+      <DependentUpon>TransportePrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAsadero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAsadero.Designer.cs">
+      <DependentUpon>formAsadero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBest.Designer.cs">
+      <DependentUpon>formBest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBravo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBravo.Designer.cs">
+      <DependentUpon>formBravo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formCeviche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCeviche.Designer.cs">
+      <DependentUpon>formCeviche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGolden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGolden.Designer.cs">
+      <DependentUpon>formGolden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formIngles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formIngles.Designer.cs">
+      <DependentUpon>formIngles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLokos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLokos.Designer.cs">
+      <DependentUpon>formLokos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMini.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMini.Designer.cs">
+      <DependentUpon>formMini.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMirador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMirador.Designer.cs">
+      <DependentUpon>formMirador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMiraflores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMiraflores.Designer.cs">
+      <DependentUpon>formMiraflores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formOlimpico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formOlimpico.Designer.cs">
+      <DependentUpon>formOlimpico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPalmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPalmar.Designer.cs">
+      <DependentUpon>formPalmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPrincipal.Designer.cs">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formRio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRio.Designer.cs">
+      <DependentUpon>formRio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSan.Designer.cs">
+      <DependentUpon>formSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formTaxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formTaxi.Designer.cs">
+      <DependentUpon>formTaxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fortTinez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fortTinez.Designer.cs">
+      <DependentUpon>fortTinez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ahorcado.resx">
+      <DependentUpon>Ahorcado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrientacionPrincipal.resx">
+      <DependentUpon>OrientacionPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlimentacionPrincipal.resx">
+      <DependentUpon>AlimentacionPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospedajePrincipal.resx">
+      <DependentUpon>HospedajePrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransportePrincipal.resx">
+      <DependentUpon>TransportePrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAsadero.resx">
+      <DependentUpon>formAsadero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBest.resx">
+      <DependentUpon>formBest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBravo.resx">
+      <DependentUpon>formBravo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCeviche.resx">
+      <DependentUpon>formCeviche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGolden.resx">
+      <DependentUpon>formGolden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formIngles.resx">
+      <DependentUpon>formIngles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLokos.resx">
+      <DependentUpon>formLokos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMini.resx">
+      <DependentUpon>formMini.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMirador.resx">
+      <DependentUpon>formMirador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMiraflores.resx">
+      <DependentUpon>formMiraflores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formOlimpico.resx">
+      <DependentUpon>formOlimpico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPalmar.resx">
+      <DependentUpon>formPalmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPrincipal.resx">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRio.resx">
+      <DependentUpon>formRio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSan.resx">
+      <DependentUpon>formSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formTaxi.resx">
+      <DependentUpon>formTaxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fortTinez.resx">
+      <DependentUpon>fortTinez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acertijo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahorcado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahorcado2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahorcado3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahorcado4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahorcado5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahorcado6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahorcado7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnStart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jugando.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icono.ico" />
+    <Content Include="Logo-Icono.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
